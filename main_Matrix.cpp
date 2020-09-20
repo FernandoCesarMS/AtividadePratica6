@@ -4,14 +4,14 @@
 #include <iostream>
 using namespace std;
 
-#include "matrix.h"
+#include "Matrix.hpp"
 
 void clearscreen() {
 if (system( "clear" )) system( "cls" );
 }
 
 int main(){
-    
+    /*
     cout << "\n ---------------Testando construtores -------------- \n" << endl;
     Matrix<double> m1;
     cout << "Matrix<int> m1" << endl;
@@ -62,5 +62,5 @@ int main(){
     cout << "-> Sobrecarga do Operador ( )" << endl;
     cout << "m6(1, 1) = 7; m6(1, 3) = -3; m6(2, 1) = 3.6; m6(2, 2) = -2; m6(3, 1) = 4;" << endl;
     cout << "m6 = " << m6 << endl;
-    
+    */
 }

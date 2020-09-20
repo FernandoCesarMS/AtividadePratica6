@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <sstream>
 #include "Matrix.hpp"
 
 // construtor default - cria uma matriz vazia com nRows = nCols = 0
