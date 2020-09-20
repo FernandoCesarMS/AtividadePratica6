@@ -1,6 +1,8 @@
 #ifndef LIST_HPP_
 #define LIST_HPP_
 #include <iostream>
+#include <stdio.h>
+
 using namespace std;
 
 /* essas declaracoes sao necessarias */
@@ -84,10 +86,7 @@ List<T>::~List(){
 }
 
 // construtor de copia
-template<class T> 
-List<T>::List<T>(const List& L){
-    *this = L;
-}
+
 
 //--------------------- Metodos que manipulam a Lista ------------------------//
 
@@ -198,7 +197,7 @@ Node<T>* List<T>::erase(Node<T> *it){
         }
     }
     else
-        cerr << "Impossivel remover o elemento da Lista." << endl;    
+        throw "Impossivel remover o elemento da Lista.";
 }
 
 
@@ -217,7 +216,7 @@ void List<T>::erase(const T &value){
         }
     }
     else
-        cerr << "Lista Vazia! Impossivel remover o elemento da Lista." << endl;    
+        throw "Lista Vazia! Impossivel remover o elemento da Lista";
 }
 
 // sobrecarga do operador de atribuição
