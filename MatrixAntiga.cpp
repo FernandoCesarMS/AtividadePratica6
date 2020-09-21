@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <sstream>
-#include "Matrix.hpp"
+#include "MatrixAntiga.hpp"
 
 // construtor default - cria uma matriz vazia com nRows = nCols = 0
 Matrix::Matrix()
