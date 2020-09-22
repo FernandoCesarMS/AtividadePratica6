@@ -66,8 +66,10 @@ class Matrix {
         {
             this->nRows = that.nRows;
             this->nCols = that.nCols;
+            m = new TValor *[nRows];
             for (int i = 0; i < nRows; i++)
             {
+                m[i] = new TValor[nCols];
                 for (int j = 0; j < nCols; j++)
                 {
                     this->m[i][j] = that.m[i][j];
@@ -150,7 +152,11 @@ class Matrix {
         
         TValor& operator()(const int rows, const int cols) const 
         {
-            return m[rows][cols];   
+            if (rows <= this->getRows() && cols <= this->getCols())
+            {
+                return this->m[rows-1][cols-1];
+            }
+            return this->m[rows-1][cols-1];   
         };
 
         //verifica igualdade entre as matrizes
