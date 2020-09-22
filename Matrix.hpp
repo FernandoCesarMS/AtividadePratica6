@@ -128,6 +128,8 @@ class Matrix {
                 }
                 std::cout << "\n";
             }
+
+            throw "Matriz não existe!"
         };
 
         // faz com que a matriz torne-se uma matriz nula
@@ -220,12 +222,12 @@ class Matrix {
                 }
                 else
                 {
-                    std::cout << "Matrizes incompativeis para essa operacao";
+                    throw "Matriz Icompativel para essa operacao!"
                 }
             }
             else
             {
-                std::cout << "Matrizes incompativeis para essa operacao";
+                throw "Matriz Icompativel para essa operacao!"
             }
         };
 
@@ -248,12 +250,12 @@ class Matrix {
                 }
                 else
                 {
-                    std::cout << "Matrixes incompativeis para essa operacao";
+                    throw "Matriz Icompativel para essa operacao!"
                 }
             }
             else
             {
-                std::cout << "Matrixes incompativeis para essa operacao";
+                throw "Matriz Icompativel para essa operacao!"
             }
         };
 
